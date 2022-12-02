@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kembiki</title>
+
+    <style>
+        body { background-color: #fef9f3; }
+        .fa{
+            padding:15px;
+            padding-bottom: 15px;
+            padding-top:15px;
+        }
+    </style>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Kembiki homepage</h1>
-    <button><a href="https://github.com/Loenus/kembiki" target="_blank" style="all: unset;">source code</a></button>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h1 class="logo">Logo</h1>
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div style="padding:2em;">
+        <h1>Kembiki homepage</h1>
+        <button><a href="https://github.com/Loenus/kembiki" target="_blank" style="all: unset;">source code</a></button>    
+    </div>
 </body>
 </html>
