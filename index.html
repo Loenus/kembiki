@@ -7,7 +7,7 @@
     <title>Kembiki</title>
 
     <style>
-        body { background-color: #fef9f3; font-family: 'Rosario', sans-serif; }
+        body { background-color: #f5c9c8; font-family: 'Rosario', sans-serif; }
         .instagram{
             background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
             /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
@@ -22,12 +22,15 @@
             /* box-shadow: 0px 3px 10px rgba(0,0,0,.25);
             border-radius: 10px; */
         }
+        ul {
+    flex-direction: row;
+  }
     </style>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="navbar-container container">
             <input type="checkbox" name="" id="">
             <div class="hamburger-lines">
@@ -46,17 +49,41 @@
             <ul class="social">
                 <li><a href="https://www.facebook.com/profile.php?id=100086481904097" target="_blank">
                     <i style="color: #3b5998;" class="fa-brands fa-2x fa-square-facebook"></i></a></li>
-                <!-- <li><a href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=">
-                    <img class="instaaa" src="Instagram-Logo-PNG-300x300.png" alt=""></a></li> -->
+                <li><a href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=">
+                    <img class="instaaa" src="Instagram-Logo-PNG-300x300.png" alt=""></a></li>
                 <li><a href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=" target="_blank">
                     <img style="width: 3%;" src="instagram_icon.png" alt="instagram_icon"></a>
-                    <!-- <i class="fa-brands instagram fa-2x fa-square-instagram"></i></a> -->
+                    <i class="fa-brands instagram fa-2x fa-square-instagram"></i></a>
                 </li>
             </ul>
         </div>
+    </nav> -->
+
+    <nav style="z-index: 10;">
+        <ul style="display: flex; justify-content: space-around;flex-wrap: nowrap;">
+            
+            <!-- <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </div> -->
+            
+            <div>ICON</div>
+
+            <div style="display: flex; justify-content: space-around;" >
+                <a href=""><div style="margin: 20px;">Chi siamo</div></a>
+                <a href=""><div style="margin: 20px;">Cosa offriamo</div></a>
+                <a href=""><div style="margin: 20px;">Promozioni attive</div></a>
+                <a style="visibility: hidden;" href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=" target="_blank">
+                    <img style="width: 50px;" src="Instagram_icon.png" alt=""></a>
+            </div>
+        </ul>
     </nav>
 
-    <img style="height: 100vh; width: 100vw;" src="https://i.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s" alt="">
+    <img style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;" src="https://i.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s" alt="">
 
     
     <div class="divisore">
