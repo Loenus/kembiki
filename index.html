@@ -7,27 +7,12 @@
     <title>Kembiki</title>
 
     <style>
-        body { background-color: #f5c9c8; font-family: 'Rosario', sans-serif; }
-        .instagram{
-            background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-            /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
-            -webkit-background-clip: text;
-            display: inline-block;
-            /* Also define standard property for compatibility */
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .instaaa {
-            width: 40px;
-            /* box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-            border-radius: 10px; */
-        }
-        ul {
-    flex-direction: row;
-  }
+        body { background-color: #f5c9c8; font-family: 'Rosario', sans-serif;  overflow-x: hidden;}
     </style>
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="navbar2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="navbar.js"></script>
 </head>
 <body>
     <!-- <nav class="navbar">
@@ -59,33 +44,25 @@
         </div>
     </nav> -->
 
-    <nav style="z-index: 10;">
-        <ul style="display: flex; justify-content: space-around;flex-wrap: nowrap;">
-            
-            <!-- <div class="navbar-container container">
-                <input type="checkbox" name="" id="">
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-            </div> -->
-            
-            <div>ICON</div>
+    <nav class="navbarrr" id="navbar">
+        <a href="#top" id="kembiki_link"><img id="kembiki_logo" style="height: 50px; width:auto; transition: ease .25s;" src="kembiki_logo.png" alt="Kembiki logo"></a>
 
-            <div style="display: flex; justify-content: space-around;" >
-                <a href=""><div style="margin: 20px;">Chi siamo</div></a>
-                <a href=""><div style="margin: 20px;">Cosa offriamo</div></a>
-                <a href=""><div style="margin: 20px;">Promozioni attive</div></a>
-                <a style="visibility: hidden;" href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=" target="_blank">
-                    <img style="width: 50px;" src="Instagram_icon.png" alt=""></a>
-            </div>
-        </ul>
+        <div style="display: flex; justify-content: space-around;" >
+            <a href="#chisiamo"><div style="margin: 20px;">Chi siamo</div></a>
+            <a href="#"><div style="margin: 20px;">Cosa offriamo</div></a>
+            <a href="#"><div style="margin: 20px;">Promozioni attive</div></a>
+            <a id="instagram_link" href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=" target="_blank">
+                <img id="instagram_logo" style="width: 50px; transition: ease .25s;" src="Instagram_icon.png" alt="Instagram logo"></a>
+        </div>
     </nav>
 
-    <img style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;" src="https://i.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s" alt="">
+    <!-- https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css -->
+    <a id="top"></a>
+    <div style="height: 85vh; width: 100vw; position: relative; top: 0; left: 0;">
+        <img style="width: 100%; height: 100%;" src="https://i.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s" alt="">
+    </div>
 
-    
+    <a id="chisiamo"></a>
     <div class="divisore">
         <div class="divisore" style="height:4px; position: relative; top:-4px"></div>
         <div class="sub-divisore">
@@ -93,7 +70,7 @@
         </div>
     </div>
 
-    <div style="height: 600px;padding:2em;">
+    <div style="height: 700px;padding:2em;">
         <h1>Kembiki homepage</h1>
         <button><a href="https://github.com/Loenus/kembiki" target="_blank" style="all: unset;">source code</a></button>  
     </div>
