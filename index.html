@@ -9,9 +9,9 @@
     <style>
         body { background-color: #f5c9c8; font-family: 'Rosario', sans-serif;  overflow-x: hidden;}
     </style>
+    <link rel="stylesheet" href="navbar_example.css">
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="navbar2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
     <script src="navbar.js"></script>
 </head>
 <body>
@@ -44,30 +44,22 @@
         </div>
     </nav> -->
 
-    <div style="display: flex; height: 80px; justify-content: space-between; z-index: 10;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px; background-image: linear-gradient(to top, rgba(255,0,0,0), #f5c9c8);">
-        <div class="nav" style="justify-content: space-around; flex-grow: 4; flex-wrap: nowrap;     align-items: center;
-        padding: 10px;">
-            <div>
-                <a href="#top"><img style="height: 50px; width:auto;" src="kembiki_logo_variant.png" alt="Kembiki logo"></a>
-            </div>
+    <div class="navbar-container" id="navbar_container">
+        <div class="nav wrapper">
+            <a id="kembiki_navbar" class="icon_size" href="#top"><img style="height: 60px;" src="/assets/kembiki_logo_variant.png" alt="Kembiki logo"></a>
             
-            <div style="display: flex;flex-wrap: nowrap ">
+            <div style="display: flex;flex-wrap: nowrap; ">
                 <a href="#chisiamo"><div style="margin: 20px;">Chi siamo</div></a>
                 <a href="#"><div style="margin: 20px;">Cosa offriamo</div></a>
                 <a href="#"><div style="margin: 20px;">Promozioni attive</div></a>
             </div>
         </div>
 
-        <div class="nav" style="padding-right: 5vw !important;">
-            <a id="instagram_link" style="display: flex; align-items: center; justify-content: flex-end;" href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=" target="_blank">
-                <img id="instagram_logo" style="width: 40px; transition: ease .25s; margin: 5px; margin-right: 12px;" src="Instagram_icon.png" alt="Instagram logo"></a>
-            <a id="facebook_link" style="display: flex; align-items: center; justify-content: flex-end;" href="https://www.facebook.com/profile.php?id=100086481904097" target="_blank">
-                <img id="facebook_logo" style="width: 40px; transition: ease .25s; margin: 5px;" src="Facebook_icon2.png" alt="Facebook logo"></a>    
+        <div class="nav social" style="gap: 10px;">
+            <a class="icon_size" href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=" target="_blank">
+                <img class="social" id="instagram_logo" src="/assets/Instagram_icon.png" alt="Instagram logo"></a>
+            <a class="icon_size" href="https://www.facebook.com/profile.php?id=100086481904097" target="_blank">
+                <img class="social" id="facebook_logo" src="/assets/Facebook_icon.png" alt="Facebook logo"></a>    
         </div>
     </div>
 

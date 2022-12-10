@@ -1,9 +1,9 @@
-window.onload = function() {
-    const navbar = document.getElementById("navbar");
-    const kembiki_link = document.getElementById("kembiki_link");
-    const kembiki_logo = document.getElementById("kembiki_logo");
-    //const instagram_link = document.getElementById("instagram_link");
-    //const instagram_logo = document.getElementById("instagram_logo");
+window.addEventListener("load", navbarTransition);
+
+function navbarTransition() {
+    const navbar = document.getElementById("navbar_container");
+    const kembiki_link = document.getElementById("kembiki_navbar");
+    const kembiki_logo = kembiki_link.children[0];
     
     let breakpoint = window.innerHeight / 2;
 
