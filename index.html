@@ -11,8 +11,12 @@
     </style>
     <link rel="stylesheet" href="navbar_example.css">
     <link rel="stylesheet" href="navbar.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
     <script src="navbar.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rosario:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Great Vibes', cursive; font-family: 'Rosario', sans-serif; -->
 </head>
 <body>
     <!-- <nav class="navbar">
@@ -44,14 +48,18 @@
         </div>
     </nav> -->
 
-    <div class="navbar-container" id="navbar_container">
+    <nav class="navbar-container" id="navbar_container">
+        <div class="hamb">
+            mobile
+        </div>
+
         <div class="nav wrapper">
             <a id="kembiki_navbar" class="icon_size" href="#top"><img style="height: 60px;" src="/assets/kembiki_logo_variant.png" alt="Kembiki logo"></a>
             
-            <div style="display: flex;flex-wrap: nowrap; ">
-                <a href="#chisiamo"><div style="margin: 20px;">Chi siamo</div></a>
-                <a href="#"><div style="margin: 20px;">Cosa offriamo</div></a>
-                <a href="#"><div style="margin: 20px;">Promozioni attive</div></a>
+            <div class="navbar-sections">
+                <a class="navbar-section" href="#chisiamo"><p style="margin: 20px;">Chi siamo</p></a>
+                <a class="navbar-section" href="#"><p style="margin: 20px;">Cosa offriamo</p></a>
+                <a class="navbar-section" href="#"><p style="margin: 20px;">Promozioni attive</p></a>
             </div>
         </div>
 
@@ -61,7 +69,7 @@
             <a class="icon_size" href="https://www.facebook.com/profile.php?id=100086481904097" target="_blank">
                 <img class="social" id="facebook_logo" src="/assets/Facebook_icon.png" alt="Facebook logo"></a>    
         </div>
-    </div>
+    </nav>
 
 
 <!--
@@ -95,7 +103,7 @@
     <div class="divisore">
         <div class="divisore" style="height:4px; position: relative; top:-4px"></div>
         <div class="sub-divisore">
-            <h1>chi siamo</h1>
+            <h1 style="font-family: 'Great Vibes', cursive;">Chi siamo</h1>
         </div>
     </div>
 

@@ -42,6 +42,24 @@
     align-items: center;
 }
 
+.navbar-sections {
+    display: flex;
+    flex-wrap: nowrap;
+
+    font-family: 'Rosario', sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+a.navbar-section {
+    all: unset;
+    cursor: pointer;
+}
+a.navbar-section:hover {
+    color: yellow;
+}
+
 .nav.social {
     padding-right: 5vw !important;
 }
@@ -55,4 +73,16 @@ img.social {
 .navbar-filled {
     /* https://www.digitalocean.com/community/tutorials/css-hex-code-colors-alpha-values */
     background-color: rgba(var(--pink), .9) !important;
+}
+
+@media screen and (min-width: 769px) {
+    .hamb {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-sections {
+        display: none;
+    }
 }
