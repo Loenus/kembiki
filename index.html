@@ -7,9 +7,9 @@
     <title>Kembiki</title>
 
     <style>
-        body { background-color: #f5c9c8; font-family: 'Rosario', sans-serif;  overflow-x: hidden;}
+        body { background-color: #f5c9c8; font-family: 'Rosario', sans-serif;  overflow-x: hidden; }
+        html {scroll-behavior: smooth;}
     </style>
-    <link rel="stylesheet" href="navbar_example.css">
     <link rel="stylesheet" href="navbar.css">
     <script src="navbar.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
@@ -19,42 +19,23 @@
     <!-- font-family: 'Great Vibes', cursive; font-family: 'Rosario', sans-serif; -->
 </head>
 <body>
-    <!-- <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
+    <nav class="navbar-container" id="navbar_container">
+        <nav class="nav hamburger-container" style="padding-left: 5vw !important; ">
+            <input class="checkbox_navbar" type="checkbox" name="" id="">
             <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#chisiamo">Chi siamo</a></li>
+                <li><a href="#">Cosa offriamo</a></li>
+                <li><a href="#">Promozioni attive</a></li>
             </ul>
-            <h1 class="logo">Logo</h1>
-            <ul class="social">
-                <li><a href="https://www.facebook.com/profile.php?id=100086481904097" target="_blank">
-                    <i style="color: #3b5998;" class="fa-brands fa-2x fa-square-facebook"></i></a></li>
-                <li><a href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=">
-                    <img class="instaaa" src="Instagram-Logo-PNG-300x300.png" alt=""></a></li>
-                <li><a href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=" target="_blank">
-                    <img style="width: 3%;" src="instagram_icon.png" alt="instagram_icon"></a>
-                    <i class="fa-brands instagram fa-2x fa-square-instagram"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
-
-    <nav class="navbar-container" id="navbar_container">
-        <div class="hamb">
-            mobile
-        </div>
+        </nav>
 
         <div class="nav wrapper">
-            <a id="kembiki_navbar" class="icon_size" href="#top"><img style="height: 60px;" src="/assets/kembiki_logo_variant.png" alt="Kembiki logo"></a>
+            <a id="kembiki_navbar" class="icon_size" href="#top"><img src="/assets/kembiki_logo_variant.png" alt="Kembiki logo"></a>
             
             <div class="navbar-sections">
                 <a class="navbar-section" href="#chisiamo"><p style="margin: 20px;">Chi siamo</p></a>
@@ -63,7 +44,7 @@
             </div>
         </div>
 
-        <div class="nav social" style="gap: 10px;">
+        <div class="nav social">
             <a class="icon_size" href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=" target="_blank">
                 <img class="social" id="instagram_logo" src="/assets/Instagram_icon.png" alt="Instagram logo"></a>
             <a class="icon_size" href="https://www.facebook.com/profile.php?id=100086481904097" target="_blank">
@@ -72,26 +53,6 @@
     </nav>
 
 
-<!--
-    <div style="display: flex; ">
-        <nav class="navbarrr" id="navbar" style="justify-content: space-around; z-index: 11; flex-grow: 4;">
-            <a href="#top" id="kembiki_link"><img id="kembiki_logo" style="height: 50px; width:auto; transition: ease .25s;" src="kembiki_logo_variant.png" alt="Kembiki logo"></a>
-    
-            <div style="display: flex; justify-content: space-around;" >
-                <a href="#chisiamo"><div style="margin: 20px;">Chi siamo</div></a>
-                <a href="#"><div style="margin: 20px;">Cosa offriamo</div></a>
-                <a href="#"><div style="margin: 20px;">Promozioni attive</div></a>
-            </div>
-        </nav>
-    
-        <nav class="navbarrr" style="justify-content: flex-start; padding-right: 5vw; flex-direction: row-reverse;">
-            <a id="instagram_link" style="display: flex; align-items: center; justify-content: flex-end;" href="https://instagram.com/kembiki_bw?igshid=YmMyMTA2M2Y=" target="_blank">
-                <img id="instagram_logo" style="width: 40px; transition: ease .25s; margin: 5px; margin-right: 10px;" src="Instagram_icon.png" alt="Instagram logo"></a>
-            <a id="facebook_link" style="display: flex; align-items: center; justify-content: flex-end;" href="https://www.facebook.com/profile.php?id=100086481904097" target="_blank">
-                <img id="facebook_logo" style="width: 40px; transition: ease .25s; margin: 5px;" src="Facebook_icon2.png" alt="Facebook logo"></a>    
-        </nav>    
-    </div>
-    -->
 
     <!-- https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css -->
     <a id="top"></a>
@@ -101,7 +62,6 @@
 
     <a id="chisiamo"></a>
     <div class="divisore">
-        <div class="divisore" style="height:4px; position: relative; top:-4px"></div>
         <div class="sub-divisore">
             <h1 style="font-family: 'Great Vibes', cursive;">Chi siamo</h1>
         </div>
@@ -111,6 +71,8 @@
         <h1>Kembiki homepage</h1>
         <button><a href="https://github.com/Loenus/kembiki" target="_blank" style="all: unset;">source code</a></button>  
     </div>
+
+    <img src="https://picsum.photos/200/300" alt="">
     
 </body>
 </html>
