@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+    <!-- https://developers.google.com/search/docs/advanced/crawling/special-tags?hl=it -->
+    <meta name="description" content="Massaggi e Wellness per tutti a Roma sud zona Eur">
+    <meta name="keywords" lang="it" content="Massaggi, Wellness, Kembiki, Spa">
+    <meta name="theme-color" content="#f5c9c8">
     <title>Kembiki</title>
 
     <style>
@@ -18,6 +22,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rosario:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!-- font-family: 'Great Vibes', cursive; font-family: 'Rosario', sans-serif; -->
 
+    <!-- social media -->
+    <meta property="og:title" content="Kembiki" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kembiki.pages.dev" />
+    <meta property="og:description" content="Massaggi e Wellness per tutti a Roma sud zona Eur" />
+    <meta property="og:image" content="https://kembiki.pages.dev/assets/kembiki_logo.png" />
+    <meta property="og:locale" content="it_IT" />
+    <meta name="twitter:card" content="summary_large_image">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
@@ -32,12 +44,12 @@
 <body>
     <nav class="navbar-container" id="navbar_container">
         <nav class="nav hamburger-container" style="padding-left: 5vw !important; ">
-            <input class="checkbox_navbar" type="checkbox" name="" id="">
-            <div class="hamburger-lines">
+            <input class="checkbox_navbar" type="checkbox" name="hamburger" id="hamburger">
+            <label for="hamburger" class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
-            </div>
+            </label>
             <ul class="menu-items">
                 <li><a href="#chisiamo">Chi siamo</a></li>
                 <li><a href="#">Cosa offriamo</a></li>
@@ -66,19 +78,19 @@
 
 
     <!-- https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css -->
-    <a id="top"></a>
+    <span id="top"></span>
     <div class="first-background-image-container" style="position: relative;">
         <img style="width: 25%; height: auto; position: absolute;
         top: 30%;
         left: 20%; z-index: 50 !important;
-      " src="/assets/kembiki_logo.png" alt="">
+      " src="/assets/kembiki_logo.png" alt="tmp">
         <img style="position: absolute;
         top: 0;
         left: 0;
-      " src="foto_principale.jpg" alt="">
+      " src="foto_principale.jpg" alt="tmp">
     </div>
 
-    <a id="chisiamo"></a>
+    <span id="chisiamo"></span>
     <div class="divisore">
         <div class="sub-divisore">
             <h1 style="font-family: 'Great Vibes', cursive;">Chi siamo</h1>
@@ -90,7 +102,7 @@
         <button><a href="https://github.com/Loenus/kembiki" target="_blank" style="all: unset;">source code</a></button>  
     </div>
 
-    <img src="https://picsum.photos/200/300" alt="">
+    <img src="https://picsum.photos/200/300" alt="tmp">
     
 </body>
 </html>
