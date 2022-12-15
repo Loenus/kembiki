@@ -75,6 +75,8 @@ a.navbar-section:hover {
 .nav.social {
     padding-right: 5vw !important;
     gap: 10px;
+    max-width: 100%; 
+    height: auto;
 }
 
 #kembiki_navbar > img {
